@@ -2,7 +2,7 @@ package com.company;
 
 public class pattern {
     public static void main(String[] args) {
-        pattern3(7);
+        pattern4(5);
     }
     static  void pattern1(int n) {
         for (int i = 0; i < n; i++) {
@@ -34,6 +34,18 @@ public class pattern {
         for (int i = 1; i <=mid-1 ; i++) {
             for (int j = mid-i ; j >0 ; j--) {
                 System.out.print("* ");
+            }
+            System.out.println("");
+        }
+    }
+    static  void pattern4(int n){
+        int mid = n/2;
+        for (int i = 0; i <n ; i++) {
+            for (int j = n-i; j > 0; j--) {
+                System.out.print(" ");
+            }
+            for (int j = i; j <=n ; j+=2) {
+                System.out.print("*");
             }
             System.out.println("");
         }

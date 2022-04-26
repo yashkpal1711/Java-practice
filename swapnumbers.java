@@ -18,4 +18,5 @@ public class swapnumbers {
         System.out.println( a +" "+b);
 
     }
+
 }

@@ -1,6 +1,5 @@
 package com.company;
 
-import java.util.ArrayList;
 import java.util.Scanner;
 import java.util.Arrays;
 
@@ -24,4 +23,5 @@ public class test {
         System.out.println(n-1);
 
     }
+
 }

@@ -2,7 +2,7 @@ package com.company;
 
 public class pattern {
     public static void main(String[] args) {
-        pattern7(5);
+        pattern7(4);
     }
     static  void pattern1(int n) {
         for (int i = 0; i < n; i++) {
@@ -113,7 +113,7 @@ public class pattern {
         n=2*n-2;
         for (int i = 0; i <=n ; i++) {
             for (int j = 0; j <= n; j++) {
-                int num =originalN- Math.min(Math.min(i,j), Math.min(n-i, n-j));
+                int num =originalN-Math.min(Math.min(i,j), Math.min(n-i, n-j));
                 System.out.print(num +" ");
             }
             System.out.println("");

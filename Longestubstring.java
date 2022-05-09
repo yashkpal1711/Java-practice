@@ -46,8 +46,7 @@ import java.util.*;
     // Driver Code
     public static void main(String args[])
     {
-        String arr[] = { "yash", "yashing ",
-                "yashic","yashinghdg" };
+        String arr[] = {  "yashing","yash"};
 
         // Function call
         String stems = findstem(arr);

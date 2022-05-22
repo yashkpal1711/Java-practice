@@ -9,4 +9,13 @@ public class Bitwise {
             System.out.println((n&(~(1<<i-1))));
         }
     }
+
+    public static class RightMostSetBit {
+        public static void main(String[] args) {
+            int n =120; //1111000
+
+            int rmsb =  ((n &-n));
+            System.out.println(Integer.toBinaryString(rmsb));
+        }
+    }
 }

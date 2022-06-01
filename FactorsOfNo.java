@@ -10,7 +10,7 @@ public class FactorsOfNo {
 
     static void factors(int n){
         ArrayList<Integer> list = new ArrayList<>();
-
+// factors using kunal method
         for (int i = 1; i <= Math.sqrt(n) ; i++) {
                 if(n%i==0){
                     if(n/i==i){

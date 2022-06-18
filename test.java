@@ -8,10 +8,10 @@ import java.util.Collections;
 class test{
     public static void main(String[] args) {
 
-        Integer[] arr = {1,2,3,-2,5};
-        int n = arr.length;
-        System.out.println(Arrays.toString( maxSubarraySum(arr, n)));
-//        int min =
+       int[] height = {0,1,0,2,1,0,1,3,2,1,2,1};
+        for (int i = 0; i < height.length-1; i++) {
+            System.out.println(height[i]);
+        }
 
     }
    static Integer[] maxSubarraySum (Integer arr[], int n){

@@ -7,22 +7,31 @@ import java.util.Collections;
 
 class test{
     public static void main(String[] args) {
-
-       int[] height = {0,1,0,2,1,0,1,3,2,1,2,1};
-        for (int i = 0; i < height.length-1; i++) {
-            System.out.println(height[i]);
+        int[] nums = {4,2,4,0,0,3,0,5,1,0};
+        int r= 1;
+        int l=0;
+        int temp=0;
+        while(r<nums.length && l< nums.length){
+         if(r< nums.length)   {
+                if (nums[r] == 0) {
+                    r++;
+                    continue;
+                }}
+                if (nums[l] != 0) {
+                    l++;
+                    r++;
+                    continue;
+                }
+            if(r< nums.length)   {
+                if (nums[l] == 0 && nums[r] != 0) {
+                    temp = nums[l];
+                    nums[l] = nums[r];
+                    nums[r] = temp;
+                    l++;
+                    r++;
+                }
+            }
         }
-
-    }
-   static Integer[] maxSubarraySum (Integer arr[], int n){
-
-//       Arrays.sort(arr);
-       Collections.reverse(Arrays.asList(arr));
-       int z = arr.length;
-       for ( Integer x : arr){
-           System.out.println(x +" ");
-       }
-       return arr;
-
+        System.out.println(Arrays.toString(nums));
     }
 }

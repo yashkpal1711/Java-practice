@@ -6,32 +6,38 @@ import java.util.Collection;
 import java.util.Collections;
 
 class test{
+
+
     public static void main(String[] args) {
-        int[] nums = {4,2,4,0,0,3,0,5,1,0};
-        int r= 1;
-        int l=0;
-        int temp=0;
-        while(r<nums.length && l< nums.length){
-         if(r< nums.length)   {
-                if (nums[r] == 0) {
-                    r++;
-                    continue;
-                }}
-                if (nums[l] != 0) {
-                    l++;
-                    r++;
-                    continue;
-                }
-            if(r< nums.length)   {
-                if (nums[l] == 0 && nums[r] != 0) {
-                    temp = nums[l];
-                    nums[l] = nums[r];
-                    nums[r] = temp;
-                    l++;
-                    r++;
-                }
+//        ArrayList<Integer> arr = new ArrayList<>();
+//
+//        arr.add(1);
+//        arr.add(2);
+//        arr.add(3);
+//        arr.add(4);
+//        arr.add(5);
+//
+//
+//        reverseInGroups(arr,5,3);
+    }
+   static void reverseInGroups(ArrayList<Integer> arr, int n, int k) {
+        // code here
+        int i=0;
+       int j=0;
+       j= Math.min(j+k,n-1);
+        while(j<n && i<n){
+
+            int m=j;
+            while(i<m){
+                Collections.swap(arr,i,m);
+                m--;
+                i++;
             }
+            i=j+1;
+            j= Math.min(j+k,n-1);
         }
-        System.out.println(Arrays.toString(nums));
+        for(Integer x : arr){
+            System.out.print(x+",");
+        }
     }
 }

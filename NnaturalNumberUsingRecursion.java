@@ -1,14 +1,21 @@
 package com.company;
 
 public class NnaturalNumberUsingRecursion {
+
     public static void main(String[] args) {
-        fun(5);
+        System.out.println(powerOfNumber(3,4));
+
     }
 
-    static void fun(int n){
-        if (n==0) return;
+    static int fun(int n){
+        if (n==0) return 0;
 
-        fun(n-1);
-        System.out.print(n+",");
+      return   fun(n-1)+n;
+
+    }
+    static int powerOfNumber(int a, int b){
+        if (b==0) return 1;
+
+        return powerOfNumber(a,b-1)*a;
     }
 }

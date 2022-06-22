@@ -3,7 +3,7 @@ package com.company;
 public class NnaturalNumberUsingRecursion {
 
     public static void main(String[] args) {
-        System.out.println(powerOfNumber(3,4));
+        System.out.println(fun(4));
 
     }
 

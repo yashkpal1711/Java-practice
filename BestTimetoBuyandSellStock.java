@@ -1,11 +1,12 @@
 package com.company;
 
-// using kadane's algorithm
+// using kadane's algorithm for Best time to buy and sell
+// using local maxima to sell and local minima to buy
 
 public class BestTimetoBuyandSellStock {
     public static void main(String[] args) {
-            int[] a= {5,2,3,2,6,6,2,9,1,0,7,4,5,0};
-        System.out.println(maxProfit(a));
+            int[] a= {7,1,5,3,6,4};
+        System.out.println(bestTimetoBuyandSellStock(a));
     }
     static int bestTimetoBuyandSellStock(int[] a){
         int allpositive=0, max=0;
